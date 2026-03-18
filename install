@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+mkdir /opt/fxhtml
+cp -v ./fxhtml /opt/fxhtml/fxhtml
+chmod +x /opt/fxhtml/fxhtml
+cp -v ./*.css /opt/fxhtml
+cp -v ./*.html /opt/fxhtml
+cp -rv ./api /opt/fxhtml/
+
+cp -v ./version /opt/fxhtml/version
+cp -v ./dependencies /opt/fxhtml/dependencies
+
+chmod 777 -R /opt/fxhtml
+
+rm -fv /usr/local/bin/fxhtml
+ln -s /opt/fxhtml/fxhtml /usr/local/bin/fxhtml
+
+echo "fxhtml installed."

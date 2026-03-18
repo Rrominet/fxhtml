@@ -1,0 +1,6 @@
+build/.cache
+build/.obj
+build/.gdb_history
+build/index.html
+build/logs
+build/fxhtml.log
