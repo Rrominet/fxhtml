@@ -4,6 +4,7 @@
 #include "debug.h"
 #include "mlgui.2/src/App.hpp"
 #include "files.2/files.h"
+#include <boost/process/system.hpp>
 
 namespace fxhtml
 {
